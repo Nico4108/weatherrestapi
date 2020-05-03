@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Weather</title>
 </head>
 <body>
-test12345678
+khjsdhfdhsjf134
+<table>
+    <div th:each="weather:${weatherList}">
+        <tbody>
+            <tr>
+                <td th:text="${weather.temp}">temp</td>
+                <td th:text="${weather.clouds}">clouds</td>
+                <p>sdfsd</p>
+
+            </tr>
+        </tbody>
+    </div>
+</table>
 </body>
 </html>
