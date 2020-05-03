@@ -1,4 +1,4 @@
-package Model;
+/*package Model;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "Weather")
-public class Weather implements Serializable {
+public class WeatherOld implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,10 +28,10 @@ public class Weather implements Serializable {
     @Column(name = "Date")
     private LocalDateTime time;
 
-    public Weather() {
+    public WeatherOld() {
     }
 
-    public Weather(int weatherId, int temp, String clouds, int pressure, int humidity, String sunrise, String sunset, LocalDateTime time){
+    public WeatherOld(int weatherId, int temp, String clouds, int pressure, int humidity, String sunrise, String sunset, LocalDateTime time){
         this.weatherId = weatherId;
         this.temp = temp;
         this.clouds = clouds;
@@ -105,4 +105,19 @@ public class Weather implements Serializable {
     public void setTime(LocalDateTime time) {
         this.time = time;
     }
+
+    @Override
+    public String toString() {
+        return "Weather{" +
+                "weatherId=" + weatherId +
+                ", temp=" + temp +
+                ", clouds='" + clouds + '\'' +
+                ", pressure=" + pressure +
+                ", humidity=" + humidity +
+                ", sunrise='" + sunrise + '\'' +
+                ", sunset='" + sunset + '\'' +
+                ", time=" + time +
+                '}';
+    }
 }
+*/

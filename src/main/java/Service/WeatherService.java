@@ -1,6 +1,6 @@
-package Service;
+/*package Service;
 
-import Model.Weather;
+import Model.WeatherOld;
 import Repo.WeatherRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,12 +13,12 @@ public class WeatherService {
     @Autowired
     WeatherRepo weatherRepo;
 
-    public List<Weather> display(){
+    public List<WeatherOld> display(){
         return weatherRepo.findAll();
     }
 
-    public void insert(Weather weather){
+    public void insert(WeatherOld weather){
         weatherRepo.save(weather);
     }
 
-}
+}*/
